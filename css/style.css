@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*             HEADER             */
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #c0d0e9;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    margin: 10px 0px 10px 50px;
+}
+
+header a img{
+    width: 87px;
+    height: 80px;
+}
+
+header div{
+    margin-right: 100px;
+}
+
+header div ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header div ul li{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+header div ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+input.src{
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font: 18px;
+    border-radius: 14px;
+    color: #444;
+    border: 1px solid gray;
+    background: #fff url(../img/buscar.png) no-repeat 9px center;
+    background-size: 17px 17px;
+    width: 110px;
+    height: 35px;
+    transition: all 600ms;
+}
+
+input.src:hover{
+    width: 170px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgb(194, 147, 99);
+}
+
+/*             MAIN             */
+
+main{
+    background-image: url(/img/fondoo.png);
+}
+
+.cuerpo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cuerpo h1{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 31px;
+}
+
+.cuerpo div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tarjeta{
+    border: 1px solid black;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    margin: 10px 20px 50px 20px;
+}
+
+.tarjeta div{
+    background-color: black;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.smartphone{
+    width: 225px;
+    height: 250px;
+}
+
+.tablet{
+    width: 415px;
+    height: 250px;
+}
+
+.pc{
+    width: 100px;
+    height: 100px;
+}
+
+.laptop{
+    width: 100px;
+    height: 100px;
+}
+
+.accesorio{
+    width: 100px;
+    height: 100px;
+}
+
+.television{
+    width: 100px;
+    height: 100px;
+}
+
+.tarjeta h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.tarjeta p{
+    font-size: 16px;
+    margin: 18px 20px 18px 20px;
+}
+
+.tarjeta a{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    text-decoration: none;
+    color: white;
+    background-color: #049CB3;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 0px 180px 20px;
+}
+
+/*             FOOTER             */
+
+footer{
+    background-color: #049CB3;
+}
+
+footer div{
+    margin-left: 60px;
+}
+
+.txt p{
+    text-align: center;
+    font-size: 22px;
+    padding: 15px 0px 25px 0px;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 25px;
+}
+
+.redes ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.redes ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.redes a img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.redes div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -40px;
+}
+
+.redes div p{
+    font-weight: 500;
+    margin-bottom: -2px;
+}
+
+.mail{
+    padding: 1px 6px 1px 3px;
+    outline: none;
+    font: 22px;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 7px;
+    color: #444;
+    border: 1px solid gray;
+    width: 200px;
+    height: 35px;
+}
+
+.submit{
+    border: 1px solid gray;
+    font-weight: 500;
+    border-radius: 4px;
+    width: 55px;
+    height: 35px;
+    background-color: #049CB3;
+}
+
+.submit:hover{
+    background-color: #048396;
+    color: white;
+    transition: 400ms;
+}
