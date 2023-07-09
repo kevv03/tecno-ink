@@ -19,16 +19,13 @@ header{
     align-items: center;
 }
 
-header a{
-    margin: 10px 0px 10px 50px;
-}
-
 header a img{
     width: 87px;
     height: 80px;
+    margin: 10px 0px 10px 50px;
 }
 
-header div{
+header div form{
     margin-right: 100px;
 }
 
@@ -36,18 +33,23 @@ header div ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    margin-left: -32px;
 }
 
 header div ul li{
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    margin: 0px 30px 0px 30px;
 }
 
 header div ul li a{
     text-decoration: none;
     font-size: 18px;
     color: black;
+}
+
+header div ul li a:hover{
+    text-decoration: underline;
 }
 
 input.src{
@@ -76,16 +78,51 @@ main{
     background-image: url(/img/fondoo.png);
 }
 
+.aboutus{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.aboutus h1{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 31px;
+    font-weight: 700;
+}
+
+.aboutus div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.aboutus div img{
+    width: 210px;
+    height: 184px;
+    margin: auto;
+}
+
+.aboutus div p{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 120px 0px 70px;
+}
+
+.linea{
+    border-top: 1px solid gray;
+    height: 2px;
+    width: 400px;
+    margin: auto;
+    }
+
 .cuerpo{
     display: flex;
     flex-wrap: wrap;
-}
-
-.cuerpo h1{
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 31px;
+    margin-top: 25px;
 }
 
 .cuerpo div{
@@ -94,82 +131,31 @@ main{
     justify-content: space-evenly;
 }
 
-.tarjeta{
-    border: 1px solid black;
-    border-radius: 14px;
-    display: flex;
-    flex-direction: column;
-    background-color: gray;
-    margin: 10px 20px 50px 20px;
+.card{
+    margin: 10px 50px 40px 50px;
 }
 
-.tarjeta div{
-    background-color: black;
-    border-radius: 14px 14px 0px 0px;
-}
-
-.smartphone{
-    width: 225px;
-    height: 250px;
-}
-
-.tablet{
-    width: 415px;
-    height: 250px;
-}
-
-.pc{
-    width: 100px;
-    height: 100px;
-}
-
-.laptop{
-    width: 100px;
-    height: 100px;
-}
-
-.accesorio{
-    width: 100px;
-    height: 100px;
-}
-
-.television{
-    width: 100px;
-    height: 100px;
-}
-
-.tarjeta h3{
-    font-size: 24px;
-    font-weight: 500;
-    margin: auto;
-    margin-top: 20px;
-}
-
-.tarjeta p{
-    font-size: 16px;
-    margin: 18px 20px 18px 20px;
-}
-
-.tarjeta a{
+.boton{
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+    border: 1px solid lightgrey;
     text-decoration: none;
     color: white;
     background-color: #049CB3;
     border-radius: 4px;
     padding: 5px 10px;
-    margin: 0px 180px 20px;
+    transition: 400ms;
+}
+
+.boton:hover{
+    background-color: #048396;
+    transform: scale(1.1);
 }
 
 /*             FOOTER             */
 
 footer{
     background-color: #049CB3;
-}
-
-footer div{
-    margin-left: 60px;
 }
 
 .txt p{
@@ -238,4 +224,170 @@ footer div{
     background-color: #048396;
     color: white;
     transition: 400ms;
+}
+
+.form{
+    width: 400px;
+    margin: auto;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*             MEDIA QUERIES             */
+
+/*             LAPTOP L O MÁS GRANDE             */
+
+@media screen and (max-width: 1257px){
+    .aboutus div img{
+        margin: auto;
+    }
+
+    .aboutus div p{
+        margin: 0px 80px 0px 50px
+    }
+}
+
+/*             LAPTOP             */
+
+@media screen and (max-width: 915px) and (min-width: 769px){
+    header{
+        justify-content: space-between;
+    }
+
+    header div form input{
+        margin-right: -50px;
+    }
+
+    header div ul li{
+        margin: 0px 10px 0px 10px;
+    }
+}
+
+/*             TABLET             */
+
+@media screen and (max-width: 768px) and (min-width: 426px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0px 15px 0px;
+    }
+
+    header a img{
+        margin: auto;
+    }
+
+    header div form{
+        margin: auto;
+    }
+
+    .navegacion{
+        margin: 10px 0px 0px 0px;
+    }
+
+    header div ul{
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    header div ul li{
+        margin: 0px 5px 0 5px;
+    }
+
+    .aboutus h1{
+        font-size: 17px;
+        margin-top: 5px;
+    }
+
+    .aboutus div img{
+        width: 150px;
+        height: 131px;
+        margin-top: -30px;
+        margin-bottom: 10px;
+    }
+
+    .aboutus div p{
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 426px) and (min-width: 0px){
+    header{
+        flex-direction: column;
+    }
+    
+    header a img{
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 64px;
+        height: 56px;
+    }
+
+    .navegacion ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacion ul li{
+        margin: 2px;
+    }
+
+    header div form{
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .aboutus h1{
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .aboutus div img{
+        width: 98px;
+        height: 86px;
+        margin-top: -15px;
+        margin-bottom: 10px;
+    }
+
+    .aboutus div p{
+        font-size: 12px;
+    }
+
+    .linea{
+        width: 200px;
+        margin: auto;
+        margin-top: -20px;
+        margin-bottom: -10px;
+    }
+
+    .redes{
+        flex-direction: column;
+    }
+
+    .redes ul{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+
+    .redes ul li{
+        margin: -25px 9px 10px 5px;
+    }
+
+    .redes div{
+        margin-bottom: 15px;
+    }
+
+    .form{
+        width: 300px;
+        margin: auto;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cuerpo div{
+        width: 100%;
+    }
 }
